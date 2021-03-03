@@ -143,7 +143,7 @@ class DurabilityAPI {
         $baseDurability = self::getBaseDurability($item->getId());
         $newDurability = self::getNewDurability($item->getId());
         if(!$item->getNamedTag()->offsetExists("Durabilité")) $item->getNamedTag()->setString("Durabilité", $newDurability);
-        $durability = $item->getNamedTag()->getString("Durabilité");
+        $durability = intval($item->getNamedTag()->getString("Durabilité"));
         if ($durability <= 1) {
             switch ($type) {
                 case "HELMET":
