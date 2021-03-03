@@ -1,0 +1,98 @@
+---
+#                                        __      __   _
+#       /\                               \ \    / /  | |
+#      /  \   _ __ _ __ ___   ___  _ __   \ \  / /_ _| |_   _  ___  ___
+#     / /\ \ | '__| '_ ` _ \ / _ \| '__|   \ \/ / _` | | | | |/ _ \/ __|
+#    / ____ \| |  | | | | | | (_) | |       \  / (_| | | |_| |  __/\__ \
+#   /_/    \_\_|  |_| |_| |_|\___/|_|        \/ \__,_|_|\__,_|\___||___/
+#
+#
+# FORMAT :
+# ITEM:
+#  - PROTECTION
+#  - DURABILITY
+# DEFAULT: REAL PROTECTION & DURABILITY
+
+# LEATHER
+LeatherHelmet:
+  - 1
+  - 56
+LeatherChestplate:
+  - 3
+  - 81
+LeatherLeggings:
+  - 2
+  - 76
+LeatherBoots:
+  - 1
+  - 66
+
+# CHAIN
+ChainHelmet:
+  - 2
+  - 166
+ChainChestplate:
+  - 5
+  - 241
+ChainLeggings:
+  - 4
+  - 226
+ChainBoots:
+  - 1
+  - 196
+
+# GOLD
+GoldHelmet:
+  - 2
+  - 78
+GoldChestplate:
+  - 5
+  - 113
+GoldLeggings:
+  - 3
+  - 106
+GoldBoots:
+  - 1
+  - 92
+
+# IRON
+IronHelmet:
+  - 2
+  - 166
+IronChestplate:
+  - 6
+  - 241
+IronLeggings:
+  - 5
+  - 226
+IronBoots:
+  - 2
+  - 196
+
+# DIAMOND
+DiamondHelmet:
+  - 3
+  - 364
+DiamondChestplate:
+  - 8
+  - 529
+DiamondLeggings:
+  - 6
+  - 496
+DiamondBoots:
+  - 3
+  - 430
+
+# NETHERITE
+NetheriteHelmet:
+  - 3
+  - 407
+NetheriteChestplate:
+  - 8
+  - 592
+NetheriteLeggings:
+  - 6
+  - 555
+NetheriteBoots:
+  - 3
+  - 481
