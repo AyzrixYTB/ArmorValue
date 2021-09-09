@@ -25,13 +25,13 @@ class ChainLeggings extends PMChainLeggings
         $amount -= self::getUnbreakingDamageReductions($this, $amount);
         $baseDurability = DurabilityAPI::getBaseDurability($this->getId());
         $newDurability = self::getMaxDurability();
-        if(!$this->getNamedTag()->offsetExists("Durabilité")) $this->getNamedTag()->setString("Durabilité", $newDurability-1);
-        $durability = intval($this->getNamedTag()->getString("Durabilité"));
+        if(!$this->getNamedTag()->offsetExists("durability")) $this->getNamedTag()->setInt("durability", $newDurability-1);
+        $durability = $this->getNamedTag()->getInt("durability");
         $damage = $newDurability / $baseDurability;
         if($durability <= 0) {
             return parent::applyDamage($baseDurability);
         }
-        $this->getNamedTag()->setString("Durabilité", $durability - $amount);
+        $this->getNamedTag()->setInt("durability", $durability - $amount);
         $damage = intval(round($durability / $damage - $baseDurability) * -1);
         $this->setDamage($damage);
         return true;
